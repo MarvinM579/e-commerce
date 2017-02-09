@@ -164,6 +164,7 @@ router.post('/add_game', function(req, res) {
     var p = new Product({
         imagePath: req.body.imagePath,
         name: req.body.game,
+        name_lower: req.body.name_lower,
         description: req.body.desc,
         console: req.body.console,
         genre: req.body.genre,
