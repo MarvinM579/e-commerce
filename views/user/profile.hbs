@@ -10,7 +10,7 @@
                         {{# each this.items }}
                             <li class="list-group-item">
                                 <span class="badge">{{ this.price }}</span>
-                                {{ this.item.name }} | Quantity: {{ this.qty }} 
+                                {{ this.item.name }} | Quantity: {{ this.qty }}
                             </li>
                         {{/each}}
                     </ul>
@@ -22,3 +22,6 @@
         {{/each}}
     </div>
 </div>
+<script>
+$('#sort').hide();
+</script>
