@@ -5,13 +5,13 @@
             <ul class="list-group">
                 {{# each products }}
                     <li class="list-group-item">
-                        <span class="badge">{{ this.qty }}</span>
-                        <strong>{{ this.item.name }}</strong>
-                        <span class="label label-success">${{ this.price }}</span>
-                        <div class="btn-group">
+                        <span class="badge pull-left">{{ this.qty }}</span>
+                        <strong style="margin-left:20px;">{{ this.item.name }}</strong>
+                        <span style="margin-left:20px;" class="label label-success">${{ this.price }}</span>
+                        <div class="btn-group pull-right">
                             <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">Action <span class="caret"></span></button>
                             <ul class="dropdown-menu">
-                                <!-- <li><a href="/reduce/{{this.item._id}}">Reduce by 1</a></li> -->
+                                <li><a href="/reduce/{{this.item._id}}">Reduce by 1</a></li>
                                 <li><a href="/remove/{{this.item._id}}">Remove from cart</a></li>
                             </ul>
                         </div>
