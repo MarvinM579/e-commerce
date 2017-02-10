@@ -26,7 +26,7 @@ router.get('/title_asc', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'DigitalCrafts Gamers', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 
@@ -39,7 +39,7 @@ router.get('/title_desc', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'DigitalCrafts Gamers', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 
@@ -52,7 +52,7 @@ router.get('/price_asc', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'DigitalCrafts Gamers', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 
@@ -65,7 +65,7 @@ router.get('/NES', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'NES', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 
@@ -78,7 +78,7 @@ router.get('/N64', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'N64', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 
@@ -91,7 +91,7 @@ router.get('/SNES', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'SNES', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 router.get('/genesis', function (req, res, next) {
@@ -103,7 +103,7 @@ router.get('/genesis', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'Genesis', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 router.get('/gg', function (req, res, next) {
@@ -115,7 +115,7 @@ router.get('/gg', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'Game Gear', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 router.get('/gb', function (req, res, next) {
@@ -127,7 +127,7 @@ router.get('/gb', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'Gameboy', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 router.get('/gbc', function (req, res, next) {
@@ -139,7 +139,7 @@ router.get('/gbc', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'Gameboy Color', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 router.get('/gba', function (req, res, next) {
@@ -151,7 +151,7 @@ router.get('/gba', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'Gameboy Advance', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 
@@ -164,7 +164,7 @@ router.get('/gc', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'Gamecube', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 router.get('/ps2', function (req, res, next) {
@@ -176,7 +176,7 @@ router.get('/ps2', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'PS2', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 router.get('/ps1', function (req, res, next) {
@@ -188,7 +188,7 @@ router.get('/ps1', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'PlayStation', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 router.get('/xbox', function (req, res, next) {
@@ -200,7 +200,7 @@ router.get('/xbox', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'XBox', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 router.get('/pc', function (req, res, next) {
@@ -212,7 +212,7 @@ router.get('/pc', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'PC', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 
@@ -225,7 +225,7 @@ router.get('/price_desc', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'DigitalCrafts Gamers', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 
