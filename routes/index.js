@@ -57,6 +57,166 @@ router.get('/price_asc', function (req, res, next) {
     });
 });
 
+router.get('/NES', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'NES'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+
+router.get('/N64', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'N64'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+
+router.get('/SNES', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'SNES'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+router.get('/genesis', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'Genesis'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+router.get('/gg', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'Game Gear'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+router.get('/gb', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'Gameboy'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+router.get('/gbc', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'Gameboy Color'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+router.get('/gba', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'Gameboy Advance'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+
+router.get('/gc', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'Gamecube'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+router.get('/ps2', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'PS2'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+router.get('/ps1', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'PS1'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+router.get('/xbox', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'Xbox'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+router.get('/pc', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({console: 'PC'}).exec(function(err, docs) {
+        console.log(docs);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+
 router.get('/price_desc', function (req, res, next) {
     var successMsg = req.flash('success')[0];
     Product.find().sort({price: 'desc'}).exec(function(err, docs) {
