@@ -17,6 +17,20 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.get('/search', function (req, res, next) {
+    var successMsg = req.flash('success')[0];
+    Product.find({name: req.query.search}).exec(function(err, docs) {
+        console.log(docs);
+        console.log(req.query.search);
+        var productChunks = [];
+        var chunkSize = 3;
+        for (var i = 0; i < docs.length; i += chunkSize) {
+            productChunks.push(docs.slice(i, i + chunkSize));
+        }
+        res.render('shop/index', {title: 'Search Results', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    });
+});
+
 router.get('/title_asc', function (req, res, next) {
     var successMsg = req.flash('success')[0];
     Product.find().sort({name_lower: 'asc'}).exec(function(err, docs) {
@@ -114,12 +128,7 @@ router.get('/gg', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
     }
-
-    res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
-
-        }
         res.render('shop/index', {title: 'Game Gear', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
-        origin/master
     });
 });
 router.get('/gb', function (req, res, next) {
