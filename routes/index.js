@@ -19,7 +19,9 @@ router.get('/', function (req, res, next) {
 
 router.get('/search', function (req, res, next) {
     var successMsg = req.flash('success')[0];
-    Product.find({name: req.query.search}).exec(function(err, docs) {
+    var searchPhrase = req.query.search;
+    var regularExpression = new RegExp(".*" + searchPhrase + ".*");
+    Product.find({name: regularExpression}).exec(function(err, docs) {
         console.log(docs);
         console.log(req.query.search);
         var productChunks = [];
