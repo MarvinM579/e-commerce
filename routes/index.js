@@ -20,7 +20,7 @@ router.get('/', function (req, res, next) {
 router.get('/search', function (req, res, next) {
     var successMsg = req.flash('success')[0];
     var searchPhrase = req.query.search;
-    var regularExpression = new RegExp(".*" + searchPhrase + ".*");
+    var regularExpression = new RegExp(".*" + searchPhrase + ".*", "i");
     Product.find({name: regularExpression}).exec(function(err, docs) {
         console.log(docs);
         console.log(req.query.search);
