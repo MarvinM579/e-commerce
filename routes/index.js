@@ -128,10 +128,6 @@ router.get('/gg', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
         res.render('shop/index', {title: 'Game Gear', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
