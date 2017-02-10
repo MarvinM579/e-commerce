@@ -5,7 +5,6 @@ var Cart = require('../models/cart');
 var Product = require('../models/product');
 var Order = require('../models/order');
 
-/* GET home page. */
 router.get('/', function (req, res, next) {
     var successMsg = req.flash('success')[0];
     Product.find(function (err, docs) {
@@ -182,7 +181,7 @@ router.get('/ps2', function (req, res, next) {
 });
 router.get('/ps1', function (req, res, next) {
     var successMsg = req.flash('success')[0];
-    Product.find({console: 'PS1'}).exec(function(err, docs) {
+    Product.find({console: 'PSOne'}).exec(function(err, docs) {
         console.log(docs);
         var productChunks = [];
         var chunkSize = 3;
