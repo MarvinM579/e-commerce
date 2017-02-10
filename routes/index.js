@@ -115,9 +115,6 @@ router.get('/gg', function (req, res, next) {
             productChunks.push(docs.slice(i, i + chunkSize));
     }
 
-    res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
-
-        }
         res.render('shop/index', {title: 'Game Gear', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
         origin/master
     });
