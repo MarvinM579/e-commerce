@@ -30,8 +30,7 @@ router.get('/title_asc', function (req, res, next) {
     });
 });
 
-router.get('/title_desc', function (req, res, next) {
-    var successMsg = req.flash('success')[0];
+router.get('/title_desc', function(req, res, next) {    var successMsg = req.flash('success')[0];
     Product.find().sort({name_lower: 'desc'}).exec(function(err, docs) {
         console.log(docs);
         var productChunks = [];
@@ -115,7 +114,7 @@ router.get('/gg', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
     }
-    
+
     res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
 
         }
