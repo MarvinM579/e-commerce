@@ -115,8 +115,8 @@ router.get('/gg', function (req, res, next) {
         var chunkSize = 3;
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
-        }
-        res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+    }
+    res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 router.get('/gb', function (req, res, next) {

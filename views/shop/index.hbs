@@ -23,7 +23,7 @@
         </div>
     </div>
 </div>
-
+{{# if products.length}}
 {{# each products }}
     <div class="row">
         {{# each this }}
@@ -45,3 +45,7 @@
         {{/each}}
     </div>
 {{/each}}
+
+{{ else }}
+<h3 class='sorry'>Sorry we currently have no inventory for this console, please check back soon as our titles are regularly updated!</h3>
+{{/if}}
