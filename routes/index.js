@@ -13,7 +13,7 @@ router.get('/', function (req, res, next) {
         for (var i = 0; i < docs.length; i += chunkSize) {
             productChunks.push(docs.slice(i, i + chunkSize));
         }
-        res.render('shop/index', {title: 'DigitalCrafts Gamers!', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+        res.render('shop/index', {title: 'DigitalCrafts Gamers!!!!', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
     });
 });
 
