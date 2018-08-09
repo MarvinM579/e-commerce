@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var schema = new Schema({
-    imagePath: {type: String, required: true},
+    imagePath: String,
     name: {type: String, required: true},
     name_lower: String,
     description: {type: String, required: true},
